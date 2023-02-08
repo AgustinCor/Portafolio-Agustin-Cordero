@@ -212,6 +212,75 @@ h1{
   margin: auto;
 }
 
+@media (max-width:414px){
+  .nav-link i{
+    margin: 10px 0;
+  }
+
+  .nav-link{
+    margin: 10px 5px !important;
+  }
+
+  .navbar-nav {
+    width:360px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  .container{
+    width: 360px !important;
+  }
+
+  .nav-link  b{
+    display: none;
+  }
+
+  .card-container{
+    height: 180vh;
+  }
+
+  .card-container div{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .card{
+    height: 300px !important;
+   }
+
+   .about-container div{
+    width: 300px ;
+    height: 500px;
+  }
+
+  .about-container div p{
+    font-size: 24px;
+  }
+
+  .pro-img {
+    width: 260px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pro-img:hover .h3-desc{
+    width: 350px;
+    font-size: 20px;
+   }
+
+}
+
+@media (max-width:993px){
+  .container{
+    width: 360px !important;
+    margin: 0 20px !important;
+  }
+  
+}
+
 @media (max-width:390px){
   h1{
     font-size: 40px !important;

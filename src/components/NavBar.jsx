@@ -16,7 +16,7 @@ const NavBar = () => {
              <b>About Me</b>
             </Nav.Link>
           <Nav.Link as={Link} to="/skills">
-          <i className="fa-solid fa-user"></i>
+          <i className="fa-solid fa-bolt"></i>
              <b>Skills</b>
           </Nav.Link>
           <Nav.Link as={Link} to="/projects">
