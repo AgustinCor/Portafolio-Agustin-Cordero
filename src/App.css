@@ -45,6 +45,8 @@ h1{
   color: #000;
 }
 
+/*About //////////*/
+
 .about-container{
   height: 100vh;
   width: 100vw;
@@ -71,6 +73,8 @@ h1{
   margin: 10px;
   font-size: 30px;
 }
+
+/*Skills  //////////*/
 
 .card{
   overflow:hidden;
@@ -146,6 +150,8 @@ h1{
   font-size: 70px;
 }
 
+/*Projects  //////////*/
+
 .carousel{
   width: 100vw;
 }
@@ -169,12 +175,6 @@ h1{
   border-radius: 50px;
   width: 50px;
   height: 50px;
-}
-
-.container{
-  background-color: rgb(26, 22, 22);
-  border-radius: 40px 40px 0 0 ;
-  position: absolute;
 }
 
 .pro-img{
@@ -206,10 +206,57 @@ h1{
 .me-auto{
   margin: 0 auto;
 }
+/*Navbar ////*/
+.container{
+  background-color: rgb(26, 22, 22);
+  border-radius: 40px 40px 0 0 ;
+  position: absolute;
+}
 
 .navbar{
   width: 800px;
   margin: auto;
+}
+
+.nav-link{
+  display: flex !important;
+  flex-direction: column;
+  margin: 0 50px;
+  height: 200px;
+  color: #fff !important;
+}
+
+.nav-link i{
+  font-size: 30px;
+}
+
+.nav-link:hover > .fa-solid{
+  position: relative;
+  border-radius: 50px;
+  top:-40%;
+  padding: 13px;
+  margin: 0 10px;
+  background-color: #000;
+}
+
+.nav-link:hover > b{
+  display: none;
+}
+
+.nav-link:hover > .fa-house{
+  animation:moveicon 1s, boxlight-home 3s infinite;
+}
+
+.nav-link:hover > .fa-user{
+  animation:moveicon 1s, boxlight-about 3s infinite;
+}
+
+.nav-link:hover > .fa-bolt{
+  animation:moveicon 1s, boxlight-skills 3s infinite;
+}
+
+.nav-link:hover > .fa-flask{
+  animation:moveicon 1s, boxlight-projects 3s infinite;
 }
 
 @media (max-width:414px){
@@ -364,16 +411,11 @@ h1{
 
 }
 
-.nav-link{
-  display: flex !important;
-  flex-direction: column;
-  margin: 0 50px;
-  height: 200px;
-  color: #fff !important;
+@keyframes moveicon{
+  0%   {
+    transform:translateY(100%);
 }
-
-.nav-link i{
-  font-size: 30px;
+  100% {transform:translateY(0)}
 }
 
 
@@ -385,7 +427,6 @@ h1{
   80%  { background: #33CC36; }
   100% { background: #33CCCC; }
 }
-
 
 @keyframes lights {
   0% {
@@ -483,3 +524,180 @@ h1{
   }
 
 }
+
+@keyframes boxlight-home{
+
+  0% {
+    box-shadow:
+      0 0 1em hsl(103, 100%, 49%),
+      0 0 0.125em hsla(119, 100%, 50%, 0.952),
+      -1em -0.125em 0.5em hsla(141, 100%, 50%, 0.578),
+      1em 0.125em 0.5em hsla(111, 97%, 47%, 0);
+  }
+  
+  30% { 
+    box-shadow:
+      0 0 1em hsl(107, 100%, 38%),
+      0 0 0.125em hsl(113, 98%, 48%),
+      -0.5em -0.125em 0.25em hsl(116, 97%, 50%),
+      0.5em 0.125em 0.25em hsla(67, 54%, 37%, 0.699);
+  }
+  
+  40% { 
+    box-shadow:
+      0 0 1em hsl(144, 98%, 49%),
+      0 0 0.125em hsl(99, 83%, 47%),
+      -0.25em -0.125em 0.125em hsla(102, 91%, 49%, 0.794),
+      0.25em 0.125em 0.125em hsla(0, 8%, 18%, 0.4);
+  }
+  
+  70% {
+    box-shadow:
+      0 0 1em hsl(139, 73%, 44%),
+      0 0 0.125em hsl(125, 59%, 48%),
+      0.5em -0.125em 0.25em hsl(135, 66%, 57%),
+      -0.5em 0.125em 0.25em hsla(246, 19%, 10%, 0.987);
+  }
+  
+  100% {
+    box-shadow:
+      0 0 1em hsla(152, 98%, 50%, 0.964),
+      0 0 0.125em hsla(141, 100%, 50%, 0.952),
+      -1em -0.125em 0.5em hsla(140, 100%, 36%, 0.578),
+      1em 0.125em 0.5em hsla(128, 69%, 34%, 0);
+  }
+
+}
+
+@keyframes boxlight-about{
+
+  0% {
+    box-shadow:
+      0 0 1em hsla(3, 94%, 50%, 0.964),
+      0 0 0.125em hsla(7, 80%, 48%, 0.952),
+      -1em -0.125em 0.5em hsla(36, 99%, 51%, 0.578),
+      1em 0.125em 0.5em hsla(21, 97%, 47%, 0);
+  }
+  
+  30% { 
+    box-shadow:
+      0 0 1em hsl(23, 97%, 49%),
+      0 0 0.125em hsl(19, 98%, 48%),
+      -0.5em -0.125em 0.25em hsl(30, 97%, 50%),
+      0.5em 0.125em 0.25em hsla(60, 8%, 7%, 0.699);
+  }
+  
+  40% { 
+    box-shadow:
+      0 0 1em hsl(354, 100%, 50%),
+      0 0 0.125em hsl(0, 67%, 45%),
+      -0.25em -0.125em 0.125em hsla(0, 67%, 48%, 0.794),
+      0.25em 0.125em 0.125em hsla(0, 30%, 8%, 0.4);
+  }
+  
+  70% {
+    box-shadow:
+      0 0 1em hsl(0, 100%, 50%),
+      0 0 0.125em hsl(0, 100%, 50%),
+      0.5em -0.125em 0.25em hsl(12, 99%, 27%),
+      -0.5em 0.125em 0.25em hsla(251, 52%, 4%, 0.987);
+  }
+  
+  100% {
+    box-shadow:
+      0 0 1em hsla(15, 100%, 28%, 0.964),
+      0 0 0.125em hsla(4, 98%, 51%, 0.952),
+      -1em -0.125em 0.5em hsla(16, 100%, 59%, 0.578),
+      1em 0.125em 0.5em hsla(0, 83%, 2%, 0);
+  }
+
+}
+
+@keyframes boxlight-skills{
+
+  0% {
+    box-shadow:
+      0 0 1em hsl(231, 100%, 49%),
+      0 0 0.125em hsla(236, 98%, 40%, 0.939),
+      -1em -0.125em 0.5em hsla(237, 73%, 42%, 0.578),
+      1em 0.125em 0.5em hsla(23, 47%, 7%, 0);
+  }
+  
+  30% { 
+    box-shadow:
+      0 0 1em hsl(242, 64%, 42%),
+      0 0 0.125em hsl(250, 74%, 33%),
+      -0.5em -0.125em 0.25em hsl(244, 58%, 26%),
+      0.5em 0.125em 0.25em hsla(60, 8%, 7%, 0.699);
+  }
+  
+  40% { 
+    box-shadow:
+    0 0 1em hsl(62, 100%, 50%),
+    0 0 0.125em hsl(66, 82%, 49%),
+    -0.5em -0.125em 0.25em hsl(50, 90%, 49%),
+    0.5em 0.125em 0.25em hsla(67, 54%, 37%, 0.699);
+  }
+  
+  70% {
+    box-shadow:
+      0 0 1em hsl(233, 81%, 34%),
+      0 0 0.125em hsla(246, 69%, 33%, 0.832),
+      0.5em -0.125em 0.25em hsl(241, 82%, 27%),
+      -0.5em 0.125em 0.25em hsla(253, 60%, 3%, 0.987);
+  }
+  
+  100% {
+    box-shadow:
+      0 0 1em hsl(187, 100%, 50%),
+      0 0 0.125em hsla(191, 93%, 52%, 0.952),
+      -1em -0.125em 0.5em hsla(178, 64%, 40%, 0.578),
+      1em 0.125em 0.5em hsla(188, 43%, 7%, 0);
+  }
+
+}
+
+@keyframes boxlight-projects{
+
+  0% {
+    box-shadow:
+      0 0 1em hsl(60, 100%, 49%),
+      0 0 0.125em hsla(61, 71%, 37%, 0.939),
+      -1em -0.125em 0.5em hsla(59, 81%, 35%, 0.578),
+      1em 0.125em 0.5em hsla(0, 0%, 0%, 0);
+  }
+  
+  30% { 
+    box-shadow:
+      0 0 1em hsl(322, 100%, 50%),
+      0 0 0.125em hsl(306, 84%, 45%),
+      -0.5em -0.125em 0.25em hsl(295, 68%, 55%),
+      0.5em 0.125em 0.25em hsla(291, 15%, 9%, 0.699);
+  }
+  
+  40% { 
+    box-shadow:
+    0 0 1em hsl(62, 100%, 50%),
+    0 0 0.125em hsl(66, 82%, 49%),
+    -0.5em -0.125em 0.25em hsl(50, 90%, 49%),
+    0.5em 0.125em 0.25em hsla(67, 54%, 37%, 0.699);
+  }
+  
+  70% {
+    box-shadow:
+      0 0 1em hsl(314, 98%, 50%),
+      0 0 0.125em hsla(313, 84%, 51%, 0.832),
+      0.5em -0.125em 0.25em hsl(313, 56%, 23%),
+      -0.5em 0.125em 0.25em hsla(300, 23%, 6%, 0.987);
+  }
+  
+  100% {
+    box-shadow:
+      0 0 1em hsl(340, 100%, 51%),
+      0 0 0.125em hsla(331, 66%, 40%, 0.56),
+      -1em -0.125em 0.5em hsla(329, 74%, 20%, 0.578),
+      1em 0.125em 0.5em hsl(287, 58%, 19%);
+  }
+
+}
+

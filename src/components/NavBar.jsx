@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
+  const [isShown,setIsShown] =useState(false);
+
     return (
 <Navbar bg="light" expand="lg"  fixed="bottom">
     <Container className='container'>
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="/">
+          <Nav.Link  as={Link} to="/">
              <i className="fa-solid fa-house"></i>
              <b>Home</b>
           </Nav.Link>

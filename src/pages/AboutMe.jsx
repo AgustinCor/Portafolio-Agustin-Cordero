@@ -6,11 +6,11 @@ const AboutMe = () => {
           <div className='about-container'>
             <div>
                 <p>
-                <i class="fa-solid fa-quote-left"></i>
+                <i className="fa-solid fa-quote-left"></i>
                     I'm Agustin Cordero,I decided to start in the
                     world of development because of videogames.I love style with css and
                     React wich is very helpfull
-               <i class="fa-solid fa-quote-right"></i>
+               <i className="fa-solid fa-quote-right"></i>
                 </p>
             </div>
           </div>
