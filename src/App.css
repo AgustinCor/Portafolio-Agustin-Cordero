@@ -2,9 +2,16 @@
   text-align: center;
 }
 
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
 .home-background{
   background-image: url("assets/img/background1.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 1600px;
   height: 100vh;
   width: 100vw;
@@ -77,24 +84,78 @@ h1{
 /*Skills  //////////*/
 
 .card{
-  overflow:hidden;
   border-radius: 40px !important;
+}
+
+.card:hover{
+  z-index: 1;
+  transform: rotate(0deg);
+  top:-60px
+}
+
+.html-card{
+  transform: rotate(-40deg);
+  left: 250px;
+  top:120px;
+}
+
+.css-card{
+  left: 150px;
+  transform: rotate(-30deg);
+  top: 30px;
+}
+
+.js-card{
+  transform: rotate(-10deg);
+  left: 50px;
+}
+
+.react-card{
+  transform: rotate(10deg);
+  right:50px;
+}
+
+.node-js-card{
+  transform: rotate(30deg);
+  top: 50px;
+  right:150px;
+}
+
+.postgre-card{
+  right:250px;
+  transform: rotate(40deg);
+  top: 120px;
+}
+
+.card-title{
+  display: flex;
+  width:100%;
+  justify-content: end;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.fa-diamond{
+  font-size: 30px;
 }
 
 .card-container{
   background-image: url("assets/img/background2.jpg");
   background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .card-container > div{
   display: flex;
-  gap: 20px;
+  width: 100%;
+  justify-content: center;
 }
 
 .card-container h2{
@@ -103,27 +164,30 @@ h1{
 
 .card-body{
   padding: 0 !important;
+  width: 100% ;
   height: 500px;
 }
 
-.css-color{
-  background-color:rgb(55, 89, 244);
+.cart-sign div{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  font-size: 120px;
 }
 
-.html-color{
-  background-color:rgb(222, 52, 52);;
-
-}
-
-.js-color{
-  background-color:rgb(221, 221, 38);;
-}
-
-.react-color{
-  background-color:rgb(4, 197, 236);
+.cart-sign div img{
+  width: 120px;
+  height: 120px;
 }
 
 .card-text{
+  display: flex;
+  justify-content:start;
+  padding-left: 20px;
+  padding-top:40px;
   position:absolute;
   bottom: 0;
   width: 100% ;
@@ -132,22 +196,22 @@ h1{
 
 .fa-react{
   color: rgb(4, 197, 236);
-  font-size: 70px;
 }
 
 .fa-html5{
   color: rgb(222, 52, 52);
-  font-size: 70px;
 }
 
 .fa-css3-alt{
   color: rgb(55, 89, 244);
-  font-size: 70px;
 }
 
 .fa-js{
   color: rgb(221, 221, 38);
-  font-size: 70px;
+}
+
+.fa-node-js{
+  color: rgb(48, 193, 0);
 }
 
 /*Projects  //////////*/
@@ -285,16 +349,65 @@ h1{
   }
 
   .card-container{
-    height: 180vh;
+    height: 150vh;
+    widows: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .card-body{
+    height: 200px;
+  }
+
+  .card-title i{
+    margin-left:250px;
+  }
+
+  .fa-brands{
+    font-size: 50px;
   }
 
   .card-container div{
     display: flex;
     flex-direction: column;
+    align-items: center;
    }
 
-   .card{
-    height: 300px !important;
+   .html-card{
+    transform: rotate(0deg);
+    left: -10px;
+    top:10px
+  }
+  
+  .css-card{
+    left: -10px;
+    transform: rotate(0deg);
+    top: 10px;
+  }
+  
+  .js-card{
+    transform: rotate(0deg);
+    left: -10px;
+  }
+  
+  .react-card{
+    transform: rotate(0deg);
+    right: 10px;
+  }
+  
+  .node-js-card{
+    transform: rotate(0deg);
+    top:10px;
+    right:10px;
+  }
+  
+  .postgre-card{
+    right:10px;
+    transform: rotate(0deg);
+    top: 10px;
+  }
+
+   .cart-sign div{
+    font-size: 80px;
    }
 
    .about-container div{
@@ -321,9 +434,18 @@ h1{
 }
 
 @media (max-width:993px){
-  .container{
-    width: 360px !important;
-    margin: 0 20px !important;
+  .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .navbar-nav {
+    width:360px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row !important;
   }
   
 }
@@ -402,7 +524,7 @@ h1{
 
    .card-container div{
     display: flex;
-    flex-direction: column;
+    width: 300px;
    }
 
    .card{
