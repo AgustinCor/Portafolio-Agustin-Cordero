@@ -13,19 +13,19 @@ const Projects = () => {
     <Carousel>
       <Carousel.Item>
         <div className="pro-img">
-          <img src={imagenes.img1} alt="Second slide" />
+          <a href="https://golden-sorbet-627c87.netlify.app" target="_blank"><img src={imagenes.img1} alt="Second slide" /></a>
           <h3 className="h3-desc">Made with:HTML,CSS and React</h3>
         </div>
       </Carousel.Item>
       <Carousel.Item>
         <div className="pro-img">
-          <img src={imagenes.img2} alt="Second slide" />
+          <a href="https://glittering-cucurucho-d7d955.netlify.app" target="_blank"><img src={imagenes.img2} alt="Second slide" /></a>
           <h3 className="h3-desc">Made with:HTML,CSS and React</h3>
         </div>
       </Carousel.Item>
       <Carousel.Item>
         <div className="pro-img">
-          <img src={imagenes.img3} alt="Second slide" />
+          <a href="https://capable-crostata-a53208.netlify.app" target="_blank"><img src={imagenes.img3} alt="Second slide" /></a>
           <h3 className="h3-desc">Made with:HTML,CSS,React and Redux</h3>
         </div>
       </Carousel.Item>
