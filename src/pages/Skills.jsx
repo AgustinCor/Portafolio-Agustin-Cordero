@@ -75,11 +75,11 @@ const Skills = () => {
         <Card className="node-js-card" style={{ width: "18rem" }}>
           <Card.Body>
             <Card.Title>
-              <i class="fa-solid fa-diamond"></i>
+              <i className="fa-solid fa-diamond"></i>
             </Card.Title>
             <Card.Subtitle className="mb-2 cart-sign">
               <div>
-                <i class="fa-brands fa-node-js"></i>
+                <i className="fa-brands fa-node-js"></i>
               </div>
             </Card.Subtitle>
             <Card.Text>
@@ -91,7 +91,7 @@ const Skills = () => {
         <Card className="postgre-card" style={{ width: "18rem" }}>
           <Card.Body>
             <Card.Title>
-              <i class="fa-solid fa-diamond"></i>
+              <i className="fa-solid fa-diamond"></i>
             </Card.Title>
             <Card.Subtitle className="mb-2 cart-sign">
               <div>
@@ -99,7 +99,7 @@ const Skills = () => {
               </div>
             </Card.Subtitle>
             <Card.Text>
-              <i class="fa-solid fa-diamond"></i>
+              <i className="fa-solid fa-diamond"></i>
             </Card.Text>
           </Card.Body>
         </Card>

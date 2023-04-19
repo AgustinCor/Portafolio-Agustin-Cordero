@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import CV from "../assets/Agustin Cordero CV.pdf";
 
 const Home = () => {
     return (
@@ -10,6 +11,9 @@ const Home = () => {
             </a>
             <a target="_blank" href="https://github.com/AgustinCor">
               <i className="fa-brands fa-github"></i>
+            </a>
+            <a href={CV} download >
+              <i className='cv-icon' >CV</i>
             </a>
           </div>
           <h1>Agustin Cordero</h1>
