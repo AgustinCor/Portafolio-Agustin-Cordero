@@ -29,6 +29,30 @@ const Projects = () => {
           <h3 className="h3-desc">Made with:HTML,CSS,React and Redux</h3>
         </div>
       </Carousel.Item>
+      <Carousel.Item>
+        <div className="pro-img">
+          <a href="https://jocular-beijinho-771f1d.netlify.app/" target="_blank"><img src={imagenes.img4} alt="Second slide" /></a>
+          <h3 className="h3-desc">Made with:HTML,CSS and React</h3>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="pro-img">
+          <a href="https://jovial-tulumba-669c69.netlify.app/" target="_blank"><img src={imagenes.img5} alt="Second slide" /></a>
+          <h3 className="h3-desc">Made with:HTML,CSS,javaScript</h3>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="pro-img">
+          <a href="https://magical-dango-831743.netlify.app/" target="_blank"><img src={imagenes.img6} alt="Second slide" /></a>
+          <h3 className="h3-desc">Made with:HTML,CSS and React</h3>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="pro-img">
+          <a href="https://dashing-cobbler-739bee.netlify.app/#footer" target="_blank"><img src={imagenes.img7} alt="Second slide" /></a>
+          <h3 className="h3-desc">Made with:HTML and CSS</h3>
+        </div>
+      </Carousel.Item>
     </Carousel>
   );
 };
