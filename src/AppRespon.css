@@ -1,0 +1,274 @@
+@media (max-width:414px){
+
+   /*Projects  //////////*/
+
+   .pro-img{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    }
+
+    .pro-img img{
+        width: 450px;
+    }
+
+    .nav-link i{
+      margin: 10px 0;
+    }
+  
+    .nav-link{
+      margin: 10px 5px !important;
+    }
+  
+    .navbar-nav {
+      width:360px ;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row !important;
+    }
+  
+    .container{
+      width: 360px !important;
+    }
+  
+    .nav-link  b{
+      display: none;
+    }
+  
+    .card-container{
+      height: 150vh;
+      widows: 100vw;
+      box-sizing: border-box;
+    }
+    
+    .card-body{
+      height: 200px;
+    }
+  
+    .card-title i{
+      margin-left:250px;
+    }
+  
+    .fa-brands{
+      font-size: 50px;
+    }
+  
+    .card-container div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  
+     .html-card{
+      transform: rotate(0deg);
+      left: -10px;
+      top:10px
+    }
+    
+    .css-card{
+      left: -10px;
+      transform: rotate(0deg);
+      top: 10px;
+    }
+    
+    .js-card{
+      transform: rotate(0deg);
+      left: -10px;
+    }
+    
+    .react-card{
+      transform: rotate(0deg);
+      right: 10px;
+    }
+    
+    .node-js-card{
+      transform: rotate(0deg);
+      top:10px;
+      right:10px;
+    }
+    
+    .postgre-card{
+      right:10px;
+      transform: rotate(0deg);
+      top: 10px;
+    }
+  
+     .cart-sign div{
+      font-size: 80px;
+     }
+  
+     .about-container div{
+      width: 300px ;
+      height: 500px;
+    }
+  
+    .about-container div p{
+      font-size: 24px;
+    }
+  
+    .pro-img {
+      width: 260px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .pro-img:hover .h3-desc{
+      width: 350px;
+      font-size: 20px;
+     }
+  
+
+  }
+  
+  @media (max-width:993px){
+    .navbar{
+      width: 100%;
+      display: flex;
+      justify-content: center !important;
+    }
+  
+    .navbar-nav {
+      width:360px ;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row !important;
+    }
+    
+  }
+  
+  @media (max-width:900px){
+  
+    .about-container > div{
+       width: 500px;
+        height: 800px;
+      }
+
+      .about-container .skills-about {
+        width: 550px;
+        height: 500px;
+      }
+
+  }
+
+  @media (max-width:390px){
+    h1{
+      font-size: 40px !important;
+    }
+  
+    /*Navbar */
+  
+    .container{
+      width: 360px !important;
+    }
+  
+    .navbar{
+      width: 100% ;
+    }
+  
+    .navbar-nav {
+      width:360px ;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row !important;
+    }
+  
+  
+    .nav-link{
+      
+      margin: 0px 5px !important;
+    }
+  
+    .nav-link i{
+      font-size: 20px !important;
+    }
+  
+    .nav-link  b{
+      display: none;
+    }
+  
+    /*About me */
+  
+    .about-container div{
+       width: 300px ;
+       height: 500px;
+    }
+  
+    .about-container div p{
+      font-size: 24px;
+    }
+  
+     /*Projects */
+  
+  
+     .pro-img {
+       width: 360px;
+       height: 500px;
+       display: flex;
+       justify-content: center;
+     }
+  
+     .pro-img img{
+      width: 300px;
+     }
+  
+     .pro-img:hover .h3-desc{
+      width: 200px;
+      font-size: 15px;
+     }
+  
+     /*Skills*/
+  
+     .card-container{
+       height: 200vh;
+     }
+  
+     .card-container div{
+      display: flex;
+      width: 300px;
+     }
+  
+     .card{
+      height: 300px !important;
+     }
+
+     /*/////About*/
+
+
+   .about-container > div{
+    width: 300px;
+     height: 900px;
+   }
+
+   .about-container .skills-about {
+     width: 450px;
+     height: 800px;
+   }
+  
+  }
+  
+  @keyframes moveicon{
+    0%   {
+      transform:translateY(100%);
+  }
+    100% {transform:translateY(0)}
+  }
+
+  @media (max-width:1620px){
+    /*About //////////*/
+
+.about-container{
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    animation: color 9s infinite linear;
+  }
+
+  }
