@@ -1,16 +1,148 @@
+@media (max-width:375px){
+  /*Skills*/
+
+  
+}
+
+@media (max-width:390px){
+  h1{
+    font-size: 40px !important;
+  }
+
+  /*Navbar */
+
+  .container{
+    width: 360px !important;
+  }
+
+  .navbar{
+    width: 100% ;
+  }
+
+  .navbar-nav {
+    width:360px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+
+  .nav-link{
+    
+    margin: 0px 5px !important;
+  }
+
+  .nav-link i{
+    font-size: 20px !important;
+  }
+
+  .nav-link  b{
+    display: none;
+  }
+
+  /*About me */
+
+  .about-container {
+    height: 200vh !important;
+  }
+
+  .about-container div{
+     width: 300px !important;
+     height: 700px !important;
+  }
+
+  .about-container div p{
+    font-size: 20px !important;
+  }
+
+  .about-container .skills-about {
+    height: 500px !important;
+  }
+
+  .about-container div ul {
+    padding: 0px;
+  }
+
+  .about-container div ul li{
+    font-size: 18px;
+    width: 300px;
+  }
+
+   /*Projects */
+
+
+   .pro-img {
+     width: 360px;
+     height: 500px;
+     display: flex;
+     justify-content: center;
+   }
+
+   .pro-img img{
+    width: 300px;
+   }
+
+   .pro-img:hover .h3-desc{
+    width: 200px;
+    font-size: 15px;
+   }
+
+   /*Skills*/
+
+   .card-container{
+     height: 200vh ;
+   }
+
+   .card-container div{
+    display: flex;
+    width: 300px;
+   }
+
+   .card{
+    height: 230px !important;
+   }
+
+   /*/////About*/
+
+
+ .about-container > div{
+   width: 200px ;
+   height: 900px;
+ }
+
+ .about-container .skills-about {
+   width: 350px;
+   height: 800px;
+ }
+
+}
+
+
+
 @media (max-width:414px){
 
    /*Projects  //////////*/
 
    .pro-img{
+     width: 260px;
+      height: 400px;
+      justify-content: center;
      display: flex;
      align-items: center;
      flex-direction: column;
     }
+ 
+    .pro-img:hover .h3-desc{
+      width: 350px;
+      font-size: 20px;
+     }
 
     .pro-img img{
         width: 450px;
     }
+      
+   /*NavBar  //////////*/
 
     .nav-link i{
       margin: 10px 0;
@@ -36,8 +168,10 @@
       display: none;
     }
   
+   /*Skills  //////////*/
+
     .card-container{
-      height: 150vh;
+      height: 250vh;
       widows: 100vw;
       box-sizing: border-box;
     }
@@ -98,27 +232,43 @@
       font-size: 80px;
      }
   
+    /*About  //////////*/    
+
+    .about-container{
+      height: 250vh !important;
+    }
+
      .about-container div{
-      width: 300px ;
+      width: 300px !important;
       height: 500px;
     }
   
     .about-container div p{
-      font-size: 24px;
+      font-size: 22px;
+    }
+
+    .about-container div ul {
+      padding: 0px;
     }
   
-    .pro-img {
-      width: 260px;
-      height: 400px;
-      display: flex;
-      justify-content: center;
+    .about-container div ul li{
+      font-size: 18px;
+      width: 300px;
     }
   
-    .pro-img:hover .h3-desc{
-      width: 350px;
-      font-size: 20px;
-     }
+  }
+
+  @media (max-width:900px){
   
+    .about-container > div{
+       width: 500px;
+        height: 800px;
+      }
+
+    .about-container .skills-about {
+        width: 550px;
+        height: 500px;
+      }
 
   }
   
@@ -138,129 +288,40 @@
     }
     
   }
-  
-  @media (max-width:900px){
-  
-    .about-container > div{
-       width: 500px;
-        height: 800px;
-      }
 
-      .about-container .skills-about {
-        width: 550px;
-        height: 500px;
-      }
-
+  @media (max-width:1500px){
+    /*Skills //////////*/
+    .card-body{
+      height: 450px;
+    }
   }
 
-  @media (max-width:390px){
-    h1{
-      font-size: 40px !important;
+  @media (max-width:1400px){
+    /*Skills //////////*/
+    .card-body{
+      height: 400px;
     }
-  
-    /*Navbar */
-  
-    .container{
-      width: 360px !important;
-    }
-  
-    .navbar{
-      width: 100% ;
-    }
-  
-    .navbar-nav {
-      width:360px ;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: row !important;
-    }
-  
-  
-    .nav-link{
-      
-      margin: 0px 5px !important;
-    }
-  
-    .nav-link i{
-      font-size: 20px !important;
-    }
-  
-    .nav-link  b{
-      display: none;
-    }
-  
-    /*About me */
-  
-    .about-container div{
-       width: 300px ;
-       height: 500px;
-    }
-  
-    .about-container div p{
-      font-size: 24px;
-    }
-  
-     /*Projects */
-  
-  
-     .pro-img {
-       width: 360px;
-       height: 500px;
-       display: flex;
-       justify-content: center;
-     }
-  
-     .pro-img img{
-      width: 300px;
-     }
-  
-     .pro-img:hover .h3-desc{
-      width: 200px;
-      font-size: 15px;
-     }
-  
-     /*Skills*/
-  
-     .card-container{
-       height: 200vh;
-     }
-  
-     .card-container div{
-      display: flex;
-      width: 300px;
-     }
-  
-     .card{
-      height: 300px !important;
-     }
-
-     /*/////About*/
-
-
-   .about-container > div{
-    width: 300px;
-     height: 900px;
-   }
-
-   .about-container .skills-about {
-     width: 450px;
-     height: 800px;
-   }
-  
   }
-  
-  @keyframes moveicon{
-    0%   {
-      transform:translateY(100%);
+
+  @media (max-width:1300px){
+    /*Skills //////////*/
+    .card-body{
+      height: 350px;
+    }
   }
-    100% {transform:translateY(0)}
+
+
+  @media (max-width:1150px){
+    .card-body{
+      height: 300px;
+    }
   }
+
 
   @media (max-width:1620px){
     /*About //////////*/
 
-.about-container{
+   .about-container{
     height: 150vh;
     width: 100vw;
     display: flex;

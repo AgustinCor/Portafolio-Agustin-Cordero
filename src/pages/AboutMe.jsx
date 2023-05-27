@@ -17,7 +17,7 @@ const AboutMe = () => {
       </div>
 
       <div className="skills-about">
-        <p>About my soft skills I do well in:
+        <h4>About my soft skills I do well in:</h4>
             <ul>
                 <li><i class="fa-solid fa-map"></i>Estrategic vision</li>
                 <li><i class="fa-solid fa-dice"></i>Adaptation to change</li>
@@ -26,7 +26,6 @@ const AboutMe = () => {
                 <li><i class="fa-solid fa-people-group"></i>Team work</li>
                 <li><i class="fa-solid fa-hand-peace"></i>Attitud</li>
             </ul>
-        </p>
       </div>
     </div>
   );

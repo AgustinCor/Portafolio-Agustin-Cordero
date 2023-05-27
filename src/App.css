@@ -90,11 +90,6 @@ h1{
   background-color: rgb(248, 235, 235);
 }
 
-.about-container .skills-about p{
-  color: rgb(52, 45, 45);
-}
-
-
 .about-container > div{
   background-color: rgb(40, 28, 28);
   display: flex;
@@ -109,6 +104,7 @@ h1{
 .about-container li{
   text-align: start;
   list-style: none;
+  font-size: 20px;
 }
 
 .about-container p{
@@ -320,6 +316,7 @@ h1{
 .navbar{
   width: 800px;
   margin: auto;
+  padding: 0px !important;
 }
 
 .nav-link{
@@ -653,5 +650,12 @@ h1{
       1em 0.125em 0.5em hsl(287, 58%, 19%);
   }
 
+}
+
+@keyframes moveicon{
+  0%   {
+    transform:translateY(100%);
+}
+  100% {transform:translateY(0)}
 }
 
