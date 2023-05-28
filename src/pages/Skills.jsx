@@ -7,11 +7,12 @@ const Skills = () => {
     <div className="card-container">
       <h2></h2>
       <div>
-        <Card className="html-card" style={{ width: "18rem" }}>
+        <Card className="html-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>
             </Card.Title>
+            
             <Card.Subtitle className="mb-2 cart-sign">
               <div>
                 <i className="fa-brands fa-html5"></i>
@@ -24,7 +25,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="css-card" style={{ width: "18rem" }}>
+        <Card className="css-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>
@@ -40,7 +41,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="js-card" style={{ width: "18rem" }}>
+        <Card className="js-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>
@@ -56,7 +57,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="react-card" style={{ width: "18rem" }}>
+        <Card className="react-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>
@@ -72,7 +73,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="node-js-card" style={{ width: "18rem" }}>
+        <Card className="node-js-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>
@@ -88,7 +89,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="postgre-card" style={{ width: "18rem" }}>
+        <Card className="postgre-card">
           <Card.Body>
             <Card.Title>
               <i className="fa-solid fa-diamond"></i>

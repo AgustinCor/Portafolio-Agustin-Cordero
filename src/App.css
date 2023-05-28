@@ -8,6 +8,17 @@
     box-sizing: inherit;
 }
 
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
 .home-background{
   background-image: url("assets/img/background1.jpg");
   background-position: center;
@@ -30,6 +41,10 @@
   margin: 50px;
 }
 
+.icon-container a{
+  text-decoration: none;
+}
+
 .cv-icon {
   background-color:#fff ;
   font-size: 20px ;
@@ -41,6 +56,7 @@
   margin: 0 10px;
   animation: boxlight 5s 750ms linear infinite;
 }
+
 
 .cv-icon:hover{
   background-color:#000;
@@ -167,6 +183,7 @@ h1{
   display: flex;
   width:100%;
   justify-content: end;
+  position: absolute;
   padding-top: 10px;
   padding-right: 20px;
 }
@@ -200,7 +217,7 @@ h1{
 
 .card-body{
   padding: 0 !important;
-  width: 100% ;
+  width: 319px ;
   height: 500px;
 }
 
@@ -209,7 +226,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 100%;
   width: 100%;
   font-size: 120px;
 }
